@@ -1,0 +1,315 @@
+<ion-header>
+  <ion-title class="c2">
+    <button (click)="voltar()" class="c1">
+      <ion-icon name="ios-arrow-back"> Voltar </ion-icon>
+    </button>
+    <ion-icon name="md-help-circle" text-center class="c3"> Exercícios</ion-icon>
+  </ion-title>
+</ion-header>
+
+
+<ion-content padding class="c4">
+  <div class="c5"> Os exercícios abaixo se referem ao poeta Ferreira Gullar e são de autoria própria, retirados de vestibulares ou sites educacionais.</div>
+  <br/><br/><div class="c5 c7">
+    <h5 class="c6" text-center> Exercício 1 </h5>
+    <p text-justify class="c8 c10">Sobre Ferreira Gular assinale a alternativa correta:</p>
+    <ion-list radio-group [(ngModel)]="resposta1">
+      <ion-item>
+        <ion-label>a) É um pseudônimo </ion-label>
+        <ion-radio value="a1"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>b) É um heterônimo </ion-label>
+        <ion-radio value="b1"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>c) É um apelido </ion-label>
+        <ion-radio value="c1"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <p text-center><button ion-button full color="secondary" (click) = "ex1()">Confirmar</button></p>
+  </div>
+
+  <br/><br/><div class="c5 c7">
+    <h5 class="c6" text-center> Exercício 2 </h5>
+    <p text-justify class="c8 c10">Ferreira Gullar participou de dois movimentos importantes que ocorreram tantos na arte como na literatura, esses movimentos foram:</p>
+    <ion-list radio-group [(ngModel)]="resposta2">
+      <ion-item>
+        <ion-label>a) Concreto e neoconcreto </ion-label>
+        <ion-radio value="a2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>b) Neoconcreto e simbolista </ion-label>
+        <ion-radio value="b2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>c) Realista e simbolista </ion-label>
+        <ion-radio value="c2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>d) Humanista e realista </ion-label>
+        <ion-radio value="d2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>e) Concreto e humanista</ion-label>
+        <ion-radio value="e2"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <p text-center><button ion-button full color="secondary" (click) = "ex2()">Confirmar</button></p>
+  </div>
+
+  <br/><br/><div class="c5 c7">
+    <h5 class="c6" text-center> Exercício 3 </h5>
+    <p text-justify class="c8">(ENEM)</p>
+    <p text-center>
+      Meu povo, meu poema<br/></p>
+    <p text-center class="c10">
+      Meu povo e meu poema crescem juntos<br/>
+      Como cresce no fruto<br/>
+      A árvore nova<br/>
+      No povo meu poema vai nascendo<br/>
+      Como no canavial<br/>
+      Nasce verde o açúcar<br/>
+      No povo meu poema está maduro<br/>
+      Como o sol<br/>
+      Na garganta do futuro<br/>
+      Meu povo em meu poema<br/>
+      Se reflete<br/>
+      Como espiga se funde em terra fértil<br/>
+      Ao povo seu poema aqui devolvo<br/>
+      Menos como quem canta<br/>
+      Do que planta<br/>
+    </p>
+    <p text-right italic>FERREIRA GULLAR. Toda poesia. José Olympio: Rio de Janeiro, 2000.</p>
+    <p text-justify class="c8 c10">
+      O texto Meu povo, meu poema, de Ferreira Gullar, foi escrito na década de 1970. Nele, o diálogo
+      com o contexto sociopolítico em que se insere expressa uma voz poética que: <br/>
+      I -  Precisa do povo para produzir seu texto, mas se esquiva de enfrentar as desigualdades
+      sociais.<br/>
+      II - Dilui a importância das contingências políticas e sociais na construção de seu universo
+      poético. <br/>
+      III - Associa o engajamento político à grandeza do fazer poético, fator de superação da
+      alienação do povo.<br/>
+      IV - Afirma que a poesia depende do povo, mas esse nem sempre vê a importância daquela
+      nas lutas de classe.<br/>
+      V - Reconhece, na identidade entre o povo e a poesia, uma etapa de seu fortalecimento
+      humano e social.</p>
+      <ion-list radio-group [(ngModel)]="resposta3">
+        <ion-item>
+          <ion-label>a) Apens I correta.</ion-label>
+          <ion-radio value="a3"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>b) Apenas II correta.</ion-label>
+          <ion-radio value="b3"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>c) Apenas III correta.</ion-label>
+          <ion-radio value="c3"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>d) Apenas IV correta.</ion-label>
+          <ion-radio value="d3"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>e) Apenas V correta.</ion-label>
+          <ion-radio value="e3"></ion-radio>
+        </ion-item>
+      </ion-list>
+      <p text-center><button ion-button full color="secondary" (click) = "ex3()">Confirmar</button></p>
+    </div>
+
+    <br/><br/><div class="c5 c7">
+      <h5 class="c6" text-center> Exercício 4 </h5>
+      <p text-justify class="c8">(UEL – Londrina)</p> <br/> <br/>
+
+      <p text-center>Não há vagas<br/></p>
+      <p text-center class="c10">
+        O preço do feijão<br/>
+        não cabe no poema. O preço<br/>
+        do arroz<br/>
+        não cabe no poema.<br/>
+        Não cabem no poema o gás<br/>
+        a luz o telefone<br/>
+        a sonegação<br/>
+        da carne<br/>
+        do leite<br/>
+        do açúcar<br/>
+        do pão<br/><br/>
+
+        O funcionário público<br/>
+        não cabe no poema<br/>
+        com seu salário de fome<br/>
+        sua vida fechada<br/>
+        em arquivos.<br/>
+        Como não cabe no poema<br/>
+        o operário<br/>
+        que esmerila seu dia de aço<br/>
+        e carvão<br/>
+        nas oficinas escuras<br/><br/>
+
+        - porque o poema, senhores,<br/>
+        está fechado:<br/>
+        "não há vagas"<br/>
+
+        Só cabe no poema<br/>
+        o homem sem estômago<br/>
+        a mulher de nuvens<br/>
+        a fruta sem preço<br/><br/>
+
+        O poema, senhores,<br/>
+        não fede<br/>
+        nem cheira.<br/>
+      </p>
+      <p text-right italic> (Ferreira Gullar)</p>
+      <p text-justify class="c8 c10">Sobre o poema "Não há vagas", de Ferreira Gullar, é correto afirmar:<br/>
+        I - Ao ser aproximada de um ato lúdico como o fazer poesia, a crítica social é atenuada e perde força. <br/>
+        II - A ruptura com o verso tradicional situa o poema no contexto da primeira geração modernista.<br/>
+        III - Nota-se uma conjunção entre a reflexão sobre o fazer poético e a preocupação com a realidade social adversa.<br/>
+        IV -  A crítica política e a reflexão sobre a literatura presentes no poema configuram exceção na produção poética de Ferreira Gullar.<br/>
+        V - Trata-se de texto poético que destoa do conjunto da obra "Toda poesia" por utilizar redondilhas maiores e menores.
+      </p>
+      <ion-list radio-group [(ngModel)]="resposta4">
+        <ion-item>
+          <ion-label>a) I e III.</ion-label>
+          <ion-radio value="a4"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>b) Apenas V. </ion-label>
+          <ion-radio value="b4"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>c) Apenas III. </ion-label>
+          <ion-radio value="c4"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>d) Apenas II.</ion-label>
+          <ion-radio value="d4"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>e) Apenas I. </ion-label>
+          <ion-radio value="e4"> </ion-radio>
+        </ion-item>
+      </ion-list>
+      <p text-center><button ion-button full color="secondary" (click) = "ex4()">Confirmar</button></p>
+
+    </div>
+
+    <br/><br/><div class="c5 c7">
+      <h5 class="c6" text-center> Exercício 5 </h5>
+      <p text-justify class="c8">
+        (BRASIL ESCOLA) <br/></p><p class="c10 c8" text-justify>Sobre a obra de Ferreira Gullar estão corretas as seguintes proposições:<br/>
+        I. Uma das principais características da obra de Ferreira Gullar é a reflexão sobre a criação artística. Para o poeta, a poesia é fruto de um trabalho árduo, racional, que implica fazer e desfazer o texto até que ele alcance a sua forma mais adequada. <br/>
+        II. Ferreira Gullar integrou o grupo de poetas religiosos que se formou no Rio de Janeiro entre as décadas de 1930 e 40. Sua poesia é dividida em duas fases: a fase transcendental e a fase material.<br/>
+
+        III. A poesia de Ferreira Gullar destaca-se pelo engajamento político. Essa produção poética engajada ganhou força a partir dos anos de 1960, quando o poeta rompeu com a poesia de vanguarda, aderindo ao Centro Popular de Cultura (CPC).<br/>
+
+        IV. Explorando propriedades gráficas e vocais das palavras, rompendo com a ortografia e com as convenções da lírica tradicional, Ferreira Gullar integrou de maneira circunstancial o movimento concretista, do qual se afastou em virtude de discordâncias em relação às suas propostas teóricas.<br/>
+
+        V. Propôs um corte profundo entre a poesia romântica e a poesia moderna, criando um novo conceito de poesia ao dessacralizar a chamada “poesia profunda”, ou seja, a poesia em que predominam os versos de sentimentos ou de abordagem introspectiva. Sua poesia é antilírica, presa ao real e direcionada ao intelecto, não às emoções.<br/><br/></p>
+        <ion-list radio-group [(ngModel)]="resposta5">
+          <ion-item>
+            <ion-label>a) I, II e V estão corretas.</ion-label>
+            <ion-radio value="a5"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>b) III e IV estão corretas.</ion-label>
+            <ion-radio value="b5"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>c) III e V estão corretas.</ion-label>
+            <ion-radio value="c5"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>d) I e IV estão corretas.</ion-label>
+            <ion-radio value="d5"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>e) II, III e IV estão corretas.</ion-label>
+            <ion-radio value="e5"></ion-radio>
+          </ion-item>
+        </ion-list>
+        <p text-center><button ion-button full color="secondary" (click) = "ex5()">Confirmar</button></p>
+      </div>
+
+      <br/><br/><div class="c5 c7">
+        <h5 class="c6" text-center> Exercício 6 </h5>
+        <p text-justify class="c8">(UFRGS)</p><br/>
+        <p text-justify class="c8 c10">Considere as seguintes afirmações sobre o Concretismo.<br/>
+I. Buscou na visualidade um dos suportes para atingir rupturas radicais com a ordem discursiva da língua portuguesa.<br/>
+II. Teve como integrantes fundamentais Haroldo de Campos, Augusto de Campos e Décio Pignatari.<br/>
+III. Foi um projeto de renovação formal e estética da poesia brasileira, cuja importância fica restrita à década de 1950.<br/>
+Quais estão corretas?</p>
+        <ion-list radio-group [(ngModel)]="resposta6">
+          <ion-item>
+            <ion-label>a) Apenas I.</ion-label>
+            <ion-radio value="a6"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>b) Apenas II.</ion-label>
+            <ion-radio value="b6"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>c) Apenas III.</ion-label>
+            <ion-radio value="c6"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>d) Apenas I e II.</ion-label>
+            <ion-radio value="d6"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>e) Apenas I, II e III.</ion-label>
+            <ion-radio value="e6"></ion-radio>
+          </ion-item>
+        </ion-list>
+        <p text-center>
+          <button ion-button full color="secondary" (click) = "ex6()">Confirmar</button>
+        </p>
+      </div>
+
+      <br/><br/><div class="c5 c7">
+        <h5 class="c6" text-center> Exercício 7 </h5>
+        <p text-justify class="c8">(BRASIL ESCOLA)<br/></p>
+        <p text-justify class="c8 c10">
+          Sobre a obra de Ferreira Gullar está (estão) correta(s): <br/>
+          I - Pouco antes do golpe militar de 1964, Gullar rompeu com a poesia concreta e, retomando o verso discursivo, passou a abordar temas de interesse social, como a Guerra Fria, a corrida atômica, o neocapitalismo, o Terceiro Mundo. São desse período as obras João Boa-Morte, Cabra marcado para morrer e Quem matou Aparecida, todas de 1962. <br/>
+          II - Além da poesia sensual, Gullar interessou-se também pela poesia social. Utilizando uma linguagem simples e direta, o poeta manifestou sua solidariedade às classes oprimidas em poemas como “O operário em construção”. <br/>
+          III - Produziu uma literatura ideológica nos anos 30 e 40, vertente que abandonou na última fase de sua produção literária, abrindo espaço para o romance de costumes provincianos, entre eles Gabriela, Cravo e Canela e Dona Flor e Seus Dois Maridos. <br/>
+          IV - A preocupação político-social foi um dos motes para a sua obra: denunciou a miséria e a opressão do trabalhador rural e das classes populares, muito embora os marginalizados, os excluídos da sociedade, tenham sido retratados de maneira estereotipada e folclórica.<br/>
+        </p>
+          <ion-list radio-group [(ngModel)]="resposta7">
+            <ion-item>
+              <ion-label>a) Apenas I.  </ion-label>
+              <ion-radio value="a7"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>b) Apenas I e III. </ion-label>
+              <ion-radio value="b7"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>c) Apenas II.</ion-label>
+              <ion-radio value="c7"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>d) Todas estão corretas.</ion-label>
+              <ion-radio value="d7"></ion-radio>
+            </ion-item>
+          </ion-list>
+          <p text-center><button ion-button full color="secondary" (click) = "ex7()">Confirmar</button></p>
+
+        </div>
+      </ion-content>
